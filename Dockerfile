@@ -44,3 +44,6 @@ RUN sudo su -c " \
   echo 'chromium \$@ --no-sandbox' >> /usr/local/bin/chromium-no-sandbox && \
   chmod +x /usr/local/bin/chromium-no-sandbox && \
   exit"
+
+# Install typescript
+RUN sudo npm install -g typescript typings
